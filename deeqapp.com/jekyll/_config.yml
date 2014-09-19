@@ -1,0 +1,13 @@
+# Site settings
+title: Deeq
+email: im@bithavoc.io
+description: "Deeq, task-manager powered by #hashtags"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://deeqapp.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+include: ['../bootstrap/dist/']

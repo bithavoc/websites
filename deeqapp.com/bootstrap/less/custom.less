@@ -1,0 +1,106 @@
+
+.btn {
+    border-radius: 5px; 
+      border-width: 1px;
+}
+
+.headline {
+    background-color: @top-bg;
+    text-align: center;
+    color: @top-color;
+    
+}
+
+.content {
+    margin-top:41px;
+}
+
+.inner {
+    padding: 20pt;
+}
+
+.custom-button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 10%);
+        border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+.btn-learn {
+  .custom-button-variant(@top-bg; #fff; #fff);
+}
+
+.btn-started {
+  .button-variant(#fff; @top-bg; #fff);
+}
+
+
+.footer {
+    background-color: #424242;
+    color: #a2a2a2;
+    text-align:center;
+    padding: 6pt;
+    font-size: 8pt;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #a2a2a2;
+}
+
+.inner {
+    padding: 20pt;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    background-image: url('/img/appIcon-32.png');
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding-left: 35px;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    margin-bottom: 60px
+}

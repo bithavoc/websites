@@ -1,0 +1,28 @@
+<header>
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Deeq</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+         
+          <ul class="nav navbar-nav navbar-right">
+                {% assign links = site.pages | sort: 'weight' %}
+                {% for page in links %}
+                  {% if page.title %}
+                  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+</header>
