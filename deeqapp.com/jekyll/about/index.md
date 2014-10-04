@@ -5,7 +5,7 @@ permalink: /about/
 weight: 2
 ---
 
-Started as a concept, Deeq is now the first Task-Management app to effectively use hashtags to ease the input and tagging of tasks.
+Started as a concept, Deeq is now the first Task-Management app to effectively use hashtags for easy input and tagging of tasks.
 
 
 Thanks for using Deeq,

@@ -23,7 +23,7 @@ Initial setup and updates managed through [Cask](http://caskroom.io/):
 
 ### CLI Programs
 
-The Deeq program is a specially crafted 32-bits [Command-Line](http://en.wikipedia.org/wiki/Command-line_interface) application, it's available for both OSX and Linux.
+The Deeq program is a specially crafted [Command-Line](http://en.wikipedia.org/wiki/Command-line_interface) application, it's available for OSX and Linux.
 
 The CLI application will inform you when there is a new version available, however, it doesn't install the new version automatically. You need to use the distribution mechanism to install newer versions.
 
@@ -35,6 +35,14 @@ Initial setup and updates managed through [Homebrew](http://brew.sh/):
 
 #### OSX/Linux executable (Advanced)
 
-This shell downloads and installs Deeq in your OSX or Linux system as an independently distributed executable in `/usr/local/bin`: 
+This shell downloads and installs Deeq in your OSX/Linux system as an independently distributed executable in `$HOME/.deeq`.
 
-    $ (curl -rSL http://dl.bithavoc.io/deeq/releases/latest.sh | bash)
+Installing using cURL(installed by default in OSX):
+
+    $ (curl -rSL http://dl.bithavoc.io/deeq/releases/posix-install.sh | bash)
+
+Installing using wget(installed by default in Linux):
+
+    $ (wget -qO- http://dl.bithavoc.io/deeq/releases/posix-install.sh | bash)
+
+To install the latest version, run the same command again.
